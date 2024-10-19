@@ -42,7 +42,8 @@ function aldrincox_custom_post() {
         'public' => true,
         'capability_type' => 'post',
         'show_ui' => true,
-        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields')
+        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+        'taxonomies' => array('category'),
     );
 
     register_post_type('services', $services_args);
